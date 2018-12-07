@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./study.component.scss']
 })
 export class StudyComponent implements OnInit {
-  result:string="足し算をしましょう";
+  coment:string="足し算をしましょう";
   constructor() { }
+
+  addAndShow() : void {
+    this.coment="これはテスト";
+  }
 
   ngOnInit() {
   }
