@@ -13,10 +13,19 @@ export class StudyComponent implements OnInit {
   constructor() { }
 
   addAndShow() : void {
+    let forResult:string="正しい値を入力しましょう";
     let int1:number;
     let int2:number;
-    this.coment=this.text1;
-    this.coment=this.text2;
+
+    //文字列を数値に変換する
+    int1=Number(this.text1);
+    int2=Number(this.text2);
+
+    if(!Number.isNaN(int1) && !Number.isNaN(int2)){
+      forResult =`${int1}+${int2}=${int1+int2}`;
+    }
+    this.coment=forResult;
+
   }
 
   ngOnInit() {
