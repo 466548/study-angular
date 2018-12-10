@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudyComponent implements OnInit {
   coment:string="足し算をしましょう";
+  text1:string;
+  text2:string;
+
   constructor() { }
 
   addAndShow() : void {
-    this.coment="これはテスト";
+    let int1:number;
+    let int2:number;
+    this.coment=this.text1;
+    this.coment=this.text2;
   }
 
   ngOnInit() {
